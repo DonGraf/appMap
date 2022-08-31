@@ -10,11 +10,11 @@ const routes: Routes = [
   {
     path: '',
     children: [
-      { path:'fullscreem', component:FullScreenComponent},
+      { path:'fullscreen', component:FullScreenComponent},
       { path:'zoom-range', component:ZoomRangeComponent},
       { path:'marcadores', component:MarcadoresComponent},
       { path:'propiedades', component:PropiedadesComponent},
-      { path:'**', redirectTo:'fullscreem'},
+      { path:'**', redirectTo:'fullscreen'},
     ]
   }
 
