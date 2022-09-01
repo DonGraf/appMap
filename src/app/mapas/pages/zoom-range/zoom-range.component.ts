@@ -19,6 +19,7 @@ import * as mapboxgl from 'mapbox-gl';
       padding: 6px;
       border-radius: 5px;
       z-index: 999;
+      width:300px;
     }
     `
   ]
@@ -57,5 +58,9 @@ export class ZoomRangeComponent implements AfterViewInit {
 
   zoomOut(){
     this.mapa.zoomOut();
+  }
+
+  zoomCambio(valor: string){
+    this.mapa.zoomTo(Number(valor));    
   }
 }
